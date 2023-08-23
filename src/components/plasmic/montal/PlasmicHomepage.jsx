@@ -29,7 +29,6 @@ import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: 9G9orG1_p
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: 5fPXOujFdoNV/icon
 import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: XghSQPwT_Fcp/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: TiU0_2HRXfm9/icon
-import alexanderMilsLCPhGxs7PwwUnsplashjpgQ21KpW6GODgA from "./images/alexanderMilsLCPhGxs7PwwUnsplashjpg.jpg"; // plasmic-import: Q21kpW6gODgA/picture
 import martenBjork6DW3XyQvcYeUnsplashjpgRHzA0GgqX5Na from "./images/martenBjork6DW3XyQvcYeUnsplashjpg.jpg"; // plasmic-import: RHzA0ggqX5Na/picture
 import swissCheese575542640PngWJvvM9X24Vhp from "./images/swissCheese575542640Png.png"; // plasmic-import: WJvvM9x24VHP/picture
 
@@ -121,7 +120,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 sty.text__bw6F1
               )}
             >
-              {"Announcebar lorem text here"}
+              {"Some annoucement you want to make goes here..."}
             </div>
           </nav>
           <nav className={classNames(projectcss.all, sty.nav__ooJg8)}>
@@ -153,7 +152,7 @@ function PlasmicHomepage__RenderFunc(props) {
                           sty.h1
                         )}
                       >
-                        {"Montal, where it begins"}
+                        {"Montal, where it all begins...."}
                       </h1>
                       <div
                         className={classNames(
@@ -164,7 +163,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       >
                         {hasVariant(globalVariants, "screen", "mobileOnly")
                           ? "Sed ut perspiciatis unde omnis iste natus error sit voluptatem"
-                          : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."}
+                          : "French chatou to celebrate your moments with your people"}
                       </div>
                     </p.Stack>
                   </div>
@@ -172,7 +171,11 @@ function PlasmicHomepage__RenderFunc(props) {
               </div>
             </section>
           ) : null}
-          <section className={classNames(projectcss.all, sty.section__gmJz)}>
+          <section
+            data-plasmic-name={"section3Cta"}
+            data-plasmic-override={overrides.section3Cta}
+            className={classNames(projectcss.all, sty.section3Cta)}
+          >
             <p.Stack
               as={"div"}
               hasGap={true}
@@ -186,7 +189,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.h2__vE7Gd
                 )}
               >
-                {"Satisfaction guarantee"}
+                {"Create your dream moment at Montal..."}
               </h2>
               <div
                 className={classNames(
@@ -201,7 +204,11 @@ function PlasmicHomepage__RenderFunc(props) {
               </div>
             </p.Stack>
           </section>
-          <section className={classNames(projectcss.all, sty.section__jhmka)}>
+          <section
+            data-plasmic-name={"sideImage"}
+            data-plasmic-override={overrides.sideImage}
+            className={classNames(projectcss.all, sty.sideImage)}
+          >
             <p.Stack
               as={"div"}
               hasGap={true}
@@ -223,12 +230,9 @@ function PlasmicHomepage__RenderFunc(props) {
                     displayMinWidth={"0"}
                     displayWidth={"auto"}
                     loading={"lazy"}
-                    src={{
-                      src: alexanderMilsLCPhGxs7PwwUnsplashjpgQ21KpW6GODgA,
-                      fullWidth: 1920,
-                      fullHeight: 1280,
-                      aspectRatio: undefined
-                    }}
+                    src={
+                      "https://images.unsplash.com/photo-1550948390-6eb7fa773072?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1748&q=80"
+                    }
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.column__xpnj2)}>
@@ -245,7 +249,7 @@ function PlasmicHomepage__RenderFunc(props) {
                         sty.h2__xTr2W
                       )}
                     >
-                      {"Return policy"}
+                      {"A unique and inviting place"}
                     </h2>
                     <div
                       className={classNames(
@@ -285,7 +289,44 @@ function PlasmicHomepage__RenderFunc(props) {
               </p.Stack>
             </p.Stack>
           </section>
-          <section className={classNames(projectcss.all, sty.section__mRmb)}>
+          <section
+            data-plasmic-name={"section3Cta2"}
+            data-plasmic-override={overrides.section3Cta2}
+            className={classNames(projectcss.all, sty.section3Cta2)}
+          >
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__cGq1E)}
+            >
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__vMz1
+                )}
+              >
+                {"Create your dream moment at Montal..."}
+              </h2>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__se0KR
+                )}
+              >
+                {
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing"
+                }
+              </div>
+            </p.Stack>
+          </section>
+          <section
+            data-plasmic-name={"niceBackgroundImage"}
+            data-plasmic-override={overrides.niceBackgroundImage}
+            className={classNames(projectcss.all, sty.niceBackgroundImage)}
+          >
             <p.Stack
               as={"div"}
               hasGap={true}
@@ -325,7 +366,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.h2__nT2Hc
                   )}
                 >
-                  {"Sustainable refurbishing"}
+                  {"Beautiful moments"}
                 </h2>
                 <div
                   className={classNames(
@@ -362,7 +403,7 @@ function PlasmicHomepage__RenderFunc(props) {
                       sty.text__d5GVe
                     )}
                   >
-                    {"Learn about sustainability"}
+                    {"Book now"}
                   </div>
                 </Button>
               </p.Stack>
@@ -384,7 +425,7 @@ function PlasmicHomepage__RenderFunc(props) {
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly")
                   ? "Get In Touch"
-                  : "Still have questions?"}
+                  : "Contact us"}
               </h2>
               <div
                 className={classNames(
@@ -955,9 +996,25 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "h1", "textInput", "textInput2", "textInput3"],
+  root: [
+    "root",
+    "header",
+    "h1",
+    "section3Cta",
+    "sideImage",
+    "section3Cta2",
+    "niceBackgroundImage",
+    "textInput",
+    "textInput2",
+    "textInput3"
+  ],
+
   header: ["header"],
   h1: ["h1"],
+  section3Cta: ["section3Cta"],
+  sideImage: ["sideImage"],
+  section3Cta2: ["section3Cta2"],
+  niceBackgroundImage: ["niceBackgroundImage"],
   textInput: ["textInput"],
   textInput2: ["textInput2"],
   textInput3: ["textInput3"]
@@ -998,6 +1055,10 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     h1: makeNodeComponent("h1"),
+    section3Cta: makeNodeComponent("section3Cta"),
+    sideImage: makeNodeComponent("sideImage"),
+    section3Cta2: makeNodeComponent("section3Cta2"),
+    niceBackgroundImage: makeNodeComponent("niceBackgroundImage"),
     textInput: makeNodeComponent("textInput"),
     textInput2: makeNodeComponent("textInput2"),
     textInput3: makeNodeComponent("textInput3"),

@@ -31,6 +31,16 @@
       }
     },
     {
+      "name": "greengold",
+      "type": "color",
+      "value": "#F8F5F0",
+      "category": "color",
+      "meta": {
+        "projectId": "pcFNE46rGqnuDWuZHtCFTE",
+        "id": "g--JJtPDD"
+      }
+    },
+    {
       "name": "h1",
       "type": "fontsize",
       "value": "80px",
