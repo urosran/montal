@@ -1,0 +1,67 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  justify-self: flex-start;
+}
+.divsingleFacility {
+  background: rgba(247, 244, 239, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(240, 237, 234, 1);
+  width: 245px;
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+.symbol2 {
+  display: flex;
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: translate(0.09999999999999432px, 0px);
+  justify-content: center;
+  flex-direction: row;
+}
+.slotTargetSlot2 {
+  font-family: "Font Awesome 5 Free";
+  font-size: 35px;
+  color: rgba(130, 153, 125, 1);
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: 0em;
+}
+.heading5Accessibilite {
+  display: flex;
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: translate(0.08899999999999864px, 0px);
+  justify-content: center;
+  flex-direction: row;
+}
+.slotTargetChildren {
+  font-family: "Gilda Display", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(33, 33, 33, 1);
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+.slotTargetSlot {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(130, 153, 125, 1);
+  text-align: center;
+  line-height: 26.25px;
+  letter-spacing: 0em;
+}

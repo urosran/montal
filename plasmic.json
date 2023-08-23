@@ -107,6 +107,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "text-input"
+        },
+        {
+          "id": "NySpP4drS6",
+          "name": "Card",
+          "type": "managed",
+          "projectId": "pcFNE46rGqnuDWuZHtCFTE",
+          "renderModuleFilePath": "plasmic/montal/PlasmicCard.jsx",
+          "importSpec": {
+            "modulePath": "Card.jsx"
+          },
+          "cssFilePath": "plasmic/montal/PlasmicCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

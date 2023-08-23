@@ -19,6 +19,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: pWNh6TZJnoM1/component
+import Card from "../../Card"; // plasmic-import: NySpP4drS6/component
 import Button from "../../Button"; // plasmic-import: 02lq7nnnvkm/component
 import TextInput from "../../TextInput"; // plasmic-import: B4V1IgWtq3Xd/component
 import { useScreenVariants as useScreenVariantsmOKod1Jttq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: mO_KOD1Jttq_/globalVariant
@@ -28,7 +29,6 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: CvK8Weuz6UD/c
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: 9G9orG1_p6IZ/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: 5fPXOujFdoNV/icon
 import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: XghSQPwT_Fcp/icon
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: TiU0_2HRXfm9/icon
 import martenBjork6DW3XyQvcYeUnsplashjpgRHzA0GgqX5Na from "./images/martenBjork6DW3XyQvcYeUnsplashjpg.jpg"; // plasmic-import: RHzA0ggqX5Na/picture
 import swissCheese575542640PngWJvvM9X24Vhp from "./images/swissCheese575542640Png.png"; // plasmic-import: WJvvM9x24VHP/picture
 
@@ -69,12 +69,6 @@ function PlasmicHomepage__RenderFunc(props) {
       },
       {
         path: "textInput2.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      },
-      {
-        path: "textInput3.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
@@ -288,6 +282,71 @@ function PlasmicHomepage__RenderFunc(props) {
                 </div>
               </p.Stack>
             </p.Stack>
+          </section>
+          <section
+            data-plasmic-name={"section3Cta3"}
+            data-plasmic-override={overrides.section3Cta3}
+            className={classNames(projectcss.all, sty.section3Cta3)}
+          >
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox___2G2Yn)}
+            >
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__kliU
+                )}
+              >
+                {"Create your dream moment at Montal..."}
+              </h2>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__oiZ30
+                )}
+              >
+                {
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing"
+                }
+              </div>
+            </p.Stack>
+          </section>
+          <section
+            data-plasmic-name={"cards"}
+            data-plasmic-override={overrides.cards}
+            className={classNames(projectcss.all, sty.cards)}
+          >
+            <div className={classNames(projectcss.all, sty.columns___6FP4S)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.column__biFu)}
+              >
+                <Card
+                  className={classNames("__wab_instance", sty.card___8Wudg)}
+                />
+              </p.Stack>
+              <div className={classNames(projectcss.all, sty.column__qtPo7)}>
+                <Card
+                  className={classNames("__wab_instance", sty.card__vEdFl)}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.column___2K8Jc)}>
+                <Card
+                  className={classNames("__wab_instance", sty.card__t2ElK)}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.column__ftq3)}>
+                <Card
+                  className={classNames("__wab_instance", sty.card__o26QE)}
+                />
+              </div>
+            </div>
           </section>
           <section
             data-plasmic-name={"section3Cta2"}
@@ -610,354 +669,6 @@ function PlasmicHomepage__RenderFunc(props) {
                   </p.Stack>
                 </p.Stack>
               </p.Stack>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__qbBkU)}
-              >
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__rV2Zv
-                  )}
-                >
-                  {"SUPPORT"}
-                </h3>
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link___57ID
-                  )}
-                >
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__zKhea)}
-                      role={"img"}
-                    />
-                  ) : null}
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__gySl
-                    )}
-                  >
-                    {"FAQ"}
-                  </div>
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__jiW4R)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__a4Crx
-                  )}
-                >
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__fVzYd)}
-                      role={"img"}
-                    />
-                  ) : null}
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__c9BUu
-                    )}
-                  >
-                    {"Shipping"}
-                  </div>
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__fiTrz)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__lt3Y9
-                  )}
-                >
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__cdAk)}
-                      role={"img"}
-                    />
-                  ) : null}
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__jPwbG
-                    )}
-                  >
-                    {"Returns + Exchanges"}
-                  </div>
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__ithnB)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__jTeMy
-                  )}
-                >
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__nuZs)}
-                      role={"img"}
-                    />
-                  ) : null}
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__p8PQt
-                    )}
-                  >
-                    {"Contact Us"}
-                  </div>
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg___2CDPt)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-              </p.Stack>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__yhlr)}
-              >
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__wRIr
-                  )}
-                >
-                  {"COMPANY"}
-                </h3>
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__pJbkL
-                  )}
-                >
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__b9Sk7)}
-                      role={"img"}
-                    />
-                  ) : null}
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__fdNw1
-                    )}
-                  >
-                    {"Our Mission"}
-                  </div>
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__tlUgn)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__nyaKy
-                  )}
-                >
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__ag3NT)}
-                      role={"img"}
-                    />
-                  ) : null}
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__azeW
-                    )}
-                  >
-                    {"Sustainability"}
-                  </div>
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__psSx6)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__vK6Pb
-                  )}
-                >
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__pKp3Q)}
-                      role={"img"}
-                    />
-                  ) : null}
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__tizeT
-                    )}
-                  >
-                    {"Stores"}
-                  </div>
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__ovAQe)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-                <p.Stack
-                  as={"a"}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__ui0V7
-                  )}
-                >
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__p3Q6E)}
-                      role={"img"}
-                    />
-                  ) : null}
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___2JLwj
-                    )}
-                  >
-                    {"Careers"}
-                  </div>
-                  {false ? (
-                    <IconIcon
-                      className={classNames(projectcss.all, sty.svg__xUx0J)}
-                      role={"img"}
-                    />
-                  ) : null}
-                </p.Stack>
-              </p.Stack>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__hWlKs)}
-              >
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__hwP2E
-                  )}
-                >
-                  {"Newsletter"}
-                </h3>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__lpO9O
-                  )}
-                >
-                  {"Lorem ipsum dolor sit amet, "}
-                </div>
-                {true ? (
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__z0SDl)}
-                  >
-                    <TextInput
-                      data-plasmic-name={"textInput3"}
-                      data-plasmic-override={overrides.textInput3}
-                      className={classNames("__wab_instance", sty.textInput3)}
-                      onChange={(...eventArgs) => {
-                        p.generateStateOnChangeProp($state, [
-                          "textInput3",
-                          "value"
-                        ])((e => e.target?.value).apply(null, eventArgs));
-                      }}
-                      placeholder={"Enter email  address"}
-                      value={
-                        p.generateStateValueProp($state, [
-                          "textInput3",
-                          "value"
-                        ]) ?? ""
-                      }
-                    />
-
-                    <Button
-                      className={classNames("__wab_instance", sty.button__sVYz)}
-                      color={"sand"}
-                      size={"compact"}
-                      submitsForm={true}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__fxmr4
-                        )}
-                      >
-                        {"SUbscribe"}
-                      </div>
-                    </Button>
-                  </p.Stack>
-                ) : null}
-              </p.Stack>
             </p.Stack>
             <div className={classNames(projectcss.all, sty.freeBox__oGiwl)}>
               {true ? (
@@ -1002,22 +713,24 @@ const PlasmicDescendants = {
     "h1",
     "section3Cta",
     "sideImage",
+    "section3Cta3",
+    "cards",
     "section3Cta2",
     "niceBackgroundImage",
     "textInput",
-    "textInput2",
-    "textInput3"
+    "textInput2"
   ],
 
   header: ["header"],
   h1: ["h1"],
   section3Cta: ["section3Cta"],
   sideImage: ["sideImage"],
+  section3Cta3: ["section3Cta3"],
+  cards: ["cards"],
   section3Cta2: ["section3Cta2"],
   niceBackgroundImage: ["niceBackgroundImage"],
   textInput: ["textInput"],
-  textInput2: ["textInput2"],
-  textInput3: ["textInput3"]
+  textInput2: ["textInput2"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -1057,11 +770,12 @@ export const PlasmicHomepage = Object.assign(
     h1: makeNodeComponent("h1"),
     section3Cta: makeNodeComponent("section3Cta"),
     sideImage: makeNodeComponent("sideImage"),
+    section3Cta3: makeNodeComponent("section3Cta3"),
+    cards: makeNodeComponent("cards"),
     section3Cta2: makeNodeComponent("section3Cta2"),
     niceBackgroundImage: makeNodeComponent("niceBackgroundImage"),
     textInput: makeNodeComponent("textInput"),
     textInput2: makeNodeComponent("textInput2"),
-    textInput3: makeNodeComponent("textInput3"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps,
