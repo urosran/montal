@@ -71,7 +71,7 @@
   height: auto;
   max-width: 100%;
   background: url("https://images.unsplash.com/photo-1574129081787-3e233dc507e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80")
-    left 0px bottom 0px / contain repeat-y fixed;
+    bottom 0px left 0px / cover repeat-y fixed;
   align-self: center;
   min-width: 0;
   padding: 8px 8px 8px 0px;
