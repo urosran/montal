@@ -12,7 +12,7 @@
 .divsingleFacility {
   background: rgba(247, 244, 239, 1);
   box-shadow: inset 0px 0px 0px 1px rgba(240, 237, 234, 1);
-  width: 245px;
+  width: 400px;
   height: 255px;
   display: flex;
   flex-direction: column;
