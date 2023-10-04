@@ -26,27 +26,17 @@ export const PlasmicCounter__VariantProps = new Array();
 
 export const PlasmicCounter__ArgProps = new Array("children");
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
-
 function PlasmicCounter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
     ...variants
   };
+  const $ctx = ph.useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
-  const [$queries, setDollarQueries] = React.useState({});
   return (
     <p.Stack
       as={"div"}
@@ -111,7 +101,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicCounter__RenderFunc({
       variants,
       args,

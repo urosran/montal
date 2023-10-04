@@ -33,27 +33,17 @@ export const PlasmicHeader__VariantProps = new Array();
 
 export const PlasmicHeader__ArgProps = new Array();
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
-
 function PlasmicHeader__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
     ...variants
   };
+  const $ctx = ph.useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
-  const [$queries, setDollarQueries] = React.useState({});
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsmOKod1Jttq()
   });
@@ -148,83 +138,71 @@ function PlasmicHeader__RenderFunc(props) {
           </p.Stack>
         </div>
         <div className={classNames(projectcss.all, sty.column__ql851)}>
-          {true ? (
+          <a
+            className={classNames(projectcss.all, projectcss.a, sty.link__xBhe)}
+            href={`/`}
+          >
+            <p.PlasmicImg
+              data-plasmic-name={"img"}
+              data-plasmic-override={overrides.img}
+              alt={""}
+              className={classNames(sty.img)}
+              displayHeight={"100%"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"none"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"89px"}
+              src={{
+                src: swissCheese575542640PngWJvvM9X24Vhp,
+                fullWidth: 640,
+                fullHeight: 532,
+                aspectRatio: undefined
+              }}
+            />
+          </a>
+        </div>
+        <div className={classNames(projectcss.all, sty.column__esr8F)}>
+          <div className={classNames(projectcss.all, sty.freeBox___01KVs)}>
             <a
               className={classNames(
                 projectcss.all,
                 projectcss.a,
-                sty.link__xBhe
+                sty.link__gs3XC
               )}
-              href={`/`}
+              href={"#"}
             >
-              <p.PlasmicImg
-                data-plasmic-name={"img"}
-                data-plasmic-override={overrides.img}
-                alt={""}
-                className={classNames(sty.img)}
-                displayHeight={"100%"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"none"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"89px"}
-                src={{
-                  src: swissCheese575542640PngWJvvM9X24Vhp,
-                  fullWidth: 640,
-                  fullHeight: 532,
-                  aspectRatio: undefined
-                }}
+              <SearchsvgIcon
+                className={classNames(projectcss.all, sty.svg__ocoah)}
+                role={"img"}
               />
             </a>
-          ) : null}
-        </div>
-        <div className={classNames(projectcss.all, sty.column__esr8F)}>
-          <div className={classNames(projectcss.all, sty.freeBox___01KVs)}>
-            {true ? (
-              <a
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__gs3XC
-                )}
-                href={"#"}
-              >
-                <SearchsvgIcon
-                  className={classNames(projectcss.all, sty.svg__ocoah)}
-                  role={"img"}
-                />
-              </a>
-            ) : null}
-            {true ? (
-              <a
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__zcqAf
-                )}
-                href={"#"}
-              >
-                <UsersvgIcon
-                  className={classNames(projectcss.all, sty.svg__fQkD)}
-                  role={"img"}
-                />
-              </a>
-            ) : null}
-            {true ? (
-              <a
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__u5IN
-                )}
-                href={"#"}
-              >
-                <CartsvgIcon
-                  className={classNames(projectcss.all, sty.svg___8ZqA)}
-                  role={"img"}
-                />
-              </a>
-            ) : null}
+            <a
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__zcqAf
+              )}
+              href={"#"}
+            >
+              <UsersvgIcon
+                className={classNames(projectcss.all, sty.svg__fQkD)}
+                role={"img"}
+              />
+            </a>
+            <a
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__u5IN
+              )}
+              href={"#"}
+            >
+              <CartsvgIcon
+                className={classNames(projectcss.all, sty.svg___8ZqA)}
+                role={"img"}
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -250,7 +228,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicHeader__RenderFunc({
       variants,
       args,

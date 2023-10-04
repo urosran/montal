@@ -44,27 +44,17 @@ export const PlasmicButton__ArgProps = new Array(
   "target"
 );
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
-
 function PlasmicButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
     ...variants
   };
+  const $ctx = ph.useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
-  const [$queries, setDollarQueries] = React.useState({});
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -107,11 +97,10 @@ function PlasmicButton__RenderFunc(props) {
 
     [$props, $ctx, $refs]
   );
-
   const $state = p.useDollarState(stateSpecs, {
     $props,
     $ctx,
-    $queries,
+    $queries: {},
     $refs
   });
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
@@ -165,7 +154,6 @@ function PlasmicButton__RenderFunc(props) {
             "showEndIcon",
             "showEndIcon"
           ),
-
           [sty.rootshowEndIcon_shape_rounded]:
             hasVariant($state, "showEndIcon", "showEndIcon") &&
             hasVariant($state, "shape", "rounded"),
@@ -174,7 +162,6 @@ function PlasmicButton__RenderFunc(props) {
             "showStartIcon",
             "showStartIcon"
           ),
-
           [sty.rootshowStartIcon_shape_rounded]:
             hasVariant($state, "shape", "rounded") &&
             hasVariant($state, "showStartIcon", "showStartIcon"),
@@ -210,13 +197,11 @@ function PlasmicButton__RenderFunc(props) {
               "color",
               "blue"
             ),
-
             [sty.startIconContainershowStartIcon]: hasVariant(
               $state,
               "showStartIcon",
               "showStartIcon"
             ),
-
             [sty.startIconContainershowStartIcon_shape_rounded]:
               hasVariant($state, "shape", "rounded") &&
               hasVariant($state, "showStartIcon", "showStartIcon")
@@ -237,55 +222,46 @@ function PlasmicButton__RenderFunc(props) {
                 "color",
                 "blue"
               ),
-
               [sty.slotTargetStartIconcolor_clear]: hasVariant(
                 $state,
                 "color",
                 "clear"
               ),
-
               [sty.slotTargetStartIconcolor_link]: hasVariant(
                 $state,
                 "color",
                 "link"
               ),
-
               [sty.slotTargetStartIconcolor_softBlue]: hasVariant(
                 $state,
                 "color",
                 "softBlue"
               ),
-
               [sty.slotTargetStartIconcolor_softGreen]: hasVariant(
                 $state,
                 "color",
                 "softGreen"
               ),
-
               [sty.slotTargetStartIconcolor_softRed]: hasVariant(
                 $state,
                 "color",
                 "softRed"
               ),
-
               [sty.slotTargetStartIconcolor_softSand]: hasVariant(
                 $state,
                 "color",
                 "softSand"
               ),
-
               [sty.slotTargetStartIconcolor_softYellow]: hasVariant(
                 $state,
                 "color",
                 "softYellow"
               ),
-
               [sty.slotTargetStartIconcolor_yellow]: hasVariant(
                 $state,
                 "color",
                 "yellow"
               ),
-
               [sty.slotTargetStartIconshowStartIcon]: hasVariant(
                 $state,
                 "showStartIcon",
@@ -306,13 +282,11 @@ function PlasmicButton__RenderFunc(props) {
             "isDisabled",
             "isDisabled"
           ),
-
           [sty.contentContainershape_rounded]: hasVariant(
             $state,
             "shape",
             "rounded"
           ),
-
           [sty.contentContainershowEndIcon]: hasVariant(
             $state,
             "showEndIcon",
@@ -331,25 +305,21 @@ function PlasmicButton__RenderFunc(props) {
               "color",
               "blue"
             ),
-
             [sty.slotTargetChildrencolor_clear]: hasVariant(
               $state,
               "color",
               "clear"
             ),
-
             [sty.slotTargetChildrencolor_green]: hasVariant(
               $state,
               "color",
               "green"
             ),
-
             [sty.slotTargetChildrencolor_link]: hasVariant(
               $state,
               "color",
               "link"
             ),
-
             [sty.slotTargetChildrencolor_link_size_minimal]:
               hasVariant($state, "color", "link") &&
               hasVariant($state, "size", "minimal"),
@@ -358,73 +328,61 @@ function PlasmicButton__RenderFunc(props) {
               "color",
               "red"
             ),
-
             [sty.slotTargetChildrencolor_sand]: hasVariant(
               $state,
               "color",
               "sand"
             ),
-
             [sty.slotTargetChildrencolor_softBlue]: hasVariant(
               $state,
               "color",
               "softBlue"
             ),
-
             [sty.slotTargetChildrencolor_softGreen]: hasVariant(
               $state,
               "color",
               "softGreen"
             ),
-
             [sty.slotTargetChildrencolor_softRed]: hasVariant(
               $state,
               "color",
               "softRed"
             ),
-
             [sty.slotTargetChildrencolor_softSand]: hasVariant(
               $state,
               "color",
               "softSand"
             ),
-
             [sty.slotTargetChildrencolor_softYellow]: hasVariant(
               $state,
               "color",
               "softYellow"
             ),
-
             [sty.slotTargetChildrencolor_yellow]: hasVariant(
               $state,
               "color",
               "yellow"
             ),
-
             [sty.slotTargetChildrenisDisabled]: hasVariant(
               $state,
               "isDisabled",
               "isDisabled"
             ),
-
             [sty.slotTargetChildrenshape_rounded]: hasVariant(
               $state,
               "shape",
               "rounded"
             ),
-
             [sty.slotTargetChildrenshowEndIcon]: hasVariant(
               $state,
               "showEndIcon",
               "showEndIcon"
             ),
-
             [sty.slotTargetChildrenshowStartIcon]: hasVariant(
               $state,
               "showStartIcon",
               "showStartIcon"
             ),
-
             [sty.slotTargetChildrensize_compact_color_sand]:
               hasVariant($state, "size", "compact") &&
               hasVariant($state, "color", "sand"),
@@ -446,7 +404,6 @@ function PlasmicButton__RenderFunc(props) {
               "color",
               "yellow"
             ),
-
             [sty.endIconContainershowEndIcon]: hasVariant(
               $state,
               "showEndIcon",
@@ -469,49 +426,41 @@ function PlasmicButton__RenderFunc(props) {
                 "color",
                 "clear"
               ),
-
               [sty.slotTargetEndIconcolor_link]: hasVariant(
                 $state,
                 "color",
                 "link"
               ),
-
               [sty.slotTargetEndIconcolor_softBlue]: hasVariant(
                 $state,
                 "color",
                 "softBlue"
               ),
-
               [sty.slotTargetEndIconcolor_softGreen]: hasVariant(
                 $state,
                 "color",
                 "softGreen"
               ),
-
               [sty.slotTargetEndIconcolor_softRed]: hasVariant(
                 $state,
                 "color",
                 "softRed"
               ),
-
               [sty.slotTargetEndIconcolor_softSand]: hasVariant(
                 $state,
                 "color",
                 "softSand"
               ),
-
               [sty.slotTargetEndIconcolor_softYellow]: hasVariant(
                 $state,
                 "color",
                 "softYellow"
               ),
-
               [sty.slotTargetEndIconcolor_yellow]: hasVariant(
                 $state,
                 "color",
                 "yellow"
               ),
-
               [sty.slotTargetEndIconshowEndIcon]: hasVariant(
                 $state,
                 "showEndIcon",
@@ -543,7 +492,6 @@ function useBehavior(props, ref) {
     },
     ref
   );
-
   return b;
 }
 
@@ -566,7 +514,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicButton__RenderFunc({
       variants,
       args,

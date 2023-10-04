@@ -304,6 +304,16 @@
           "id": "wGPxbGO_5DiO",
           "name": "towfiqu-barbhuiya-joqWSI9u_XM-unsplash.jpg",
           "filePath": "plasmic/montal/images/towfiquBarbhuiyaJoqWsi9UXmUnsplashjpg.jpg"
+        },
+        {
+          "id": "YmHFjtXZIBgG",
+          "name": "image",
+          "filePath": "plasmic/montal/images/image.png"
+        },
+        {
+          "id": "51xLg64E0pCX",
+          "name": "image 2",
+          "filePath": "plasmic/montal/images/image2.png"
         }
       ],
       "indirect": false,
@@ -335,6 +345,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.304",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.304/dist/plasmic.schema.json"
+  "cliVersion": "0.1.313",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.313/dist/plasmic.schema.json"
 }

@@ -123,6 +123,15 @@
   --mixin-GVCC4l229kG-_white-space: pre-wrap;
 }
 
+.plasmic_mixins {
+  --mixin-ghh2nT-OFP45_white-space: pre-wrap;
+  --plasmic-mixin-menu-text_white-space: var(--mixin-ghh2nT-OFP45_white-space);
+  --mixin-VN3rkTpUchjd_white-space: pre-wrap;
+  --plasmic-mixin-footer-menu_white-space: var(
+    --mixin-VN3rkTpUchjd_white-space
+  );
+}
+
 :where(.all) {
   display: block;
   white-space: inherit;

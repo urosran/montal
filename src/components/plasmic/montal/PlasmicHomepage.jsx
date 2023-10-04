@@ -29,6 +29,8 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: CvK8Weuz6UD/c
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: 9G9orG1_p6IZ/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: 5fPXOujFdoNV/icon
 import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: XghSQPwT_Fcp/icon
+import imageYmHFjtXziBgG from "./images/image.png"; // plasmic-import: YmHFjtXZIBgG/picture
+import image251XLg64E0PCx from "./images/image2.png"; // plasmic-import: 51xLg64E0pCX/picture
 import martenBjork6DW3XyQvcYeUnsplashjpgRHzA0GgqX5Na from "./images/martenBjork6DW3XyQvcYeUnsplashjpg.jpg"; // plasmic-import: RHzA0ggqX5Na/picture
 import swissCheese575542640PngWJvvM9X24Vhp from "./images/swissCheese575542640Png.png"; // plasmic-import: WJvvM9x24VHP/picture
 
@@ -38,27 +40,17 @@ export const PlasmicHomepage__VariantProps = new Array();
 
 export const PlasmicHomepage__ArgProps = new Array();
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
-
 function PlasmicHomepage__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
     ...variants
   };
+  const $ctx = ph.useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
-  const [$queries, setDollarQueries] = React.useState({});
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -77,11 +69,10 @@ function PlasmicHomepage__RenderFunc(props) {
 
     [$props, $ctx, $refs]
   );
-
   const $state = p.useDollarState(stateSpecs, {
     $props,
     $ctx,
-    $queries,
+    $queries: {},
     $refs
   });
   const globalVariants = ensureGlobalVariants({
@@ -124,47 +115,31 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames("__wab_instance", sty.header)}
             />
           </nav>
-          {true ? (
-            <section className={classNames(projectcss.all, sty.section__iAv7Z)}>
-              <div className={classNames(projectcss.all, sty.freeBox__umUt)}>
-                <div className={classNames(projectcss.all, sty.columns__vAyjg)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column___5Wh1G)}
+          <section className={classNames(projectcss.all, sty.section__iAv7Z)}>
+            <div className={classNames(projectcss.all, sty.freeBox__umUt)}>
+              <div className={classNames(projectcss.all, sty.columns__vAyjg)}>
+                <div className={classNames(projectcss.all, sty.column___5Wh1G)}>
+                  <h1
+                    data-plasmic-name={"h1"}
+                    data-plasmic-override={overrides.h1}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1
+                    )}
                   >
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__xVn0N)}
-                    >
-                      <h1
-                        data-plasmic-name={"h1"}
-                        data-plasmic-override={overrides.h1}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.h1,
-                          projectcss.__wab_text,
-                          sty.h1
-                        )}
-                      >
-                        {"Montal, where it all begins...."}
-                      </h1>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__l7A5
-                        )}
-                      >
-                        {hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "Sed ut perspiciatis unde omnis iste natus error sit voluptatem"
-                          : "French chatou to celebrate your moments with your people"}
-                      </div>
-                    </p.Stack>
-                  </div>
+                    {"           Domaine de Montalouveau "}
+                  </h1>
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__xVn0N)}
+                  />
                 </div>
               </div>
-            </section>
-          ) : null}
+            </div>
+          </section>
           <section
             data-plasmic-name={"section3Cta"}
             data-plasmic-override={overrides.section3Cta}
@@ -174,29 +149,7 @@ function PlasmicHomepage__RenderFunc(props) {
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox___0Lscq)}
-            >
-              <h2
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2__vE7Gd
-                )}
-              >
-                {"Create your dream moment at Montal..."}
-              </h2>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__kxhAd
-                )}
-              >
-                {
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing"
-                }
-              </div>
-            </p.Stack>
+            />
           </section>
           <section
             data-plasmic-name={"sideImage"}
@@ -243,41 +196,25 @@ function PlasmicHomepage__RenderFunc(props) {
                         sty.h2__xTr2W
                       )}
                     >
-                      {"A unique and inviting place"}
+                      {"Le Domaine de Montalouveau"}
                     </h2>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__u5ZKy
-                      )}
-                    >
-                      {
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing"
-                      }
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__tk1T7
-                      )}
-                    >
-                      {
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing"
-                      }
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__kwwIb
-                      )}
-                    >
-                      {
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing"
-                      }
-                    </div>
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__v1Grs)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: imageYmHFjtXziBgG,
+                        fullWidth: 936,
+                        fullHeight: 360,
+                        aspectRatio: undefined
+                      }}
+                    />
                   </p.Stack>
                 </div>
               </p.Stack>
@@ -301,19 +238,8 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.h2__kliU
                 )}
               >
-                {"Create your dream moment at Montal..."}
+                {"Les atouts du Domaine"}
               </h2>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__oiZ30
-                )}
-              >
-                {
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing"
-                }
-              </div>
             </p.Stack>
           </section>
           <section
@@ -329,22 +255,56 @@ function PlasmicHomepage__RenderFunc(props) {
               >
                 <Card
                   className={classNames("__wab_instance", sty.card___8Wudg)}
-                />
+                  slot={null}
+                  slot2={null}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__aNsr
+                    )}
+                  >
+                    {""}
+                  </div>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__f6EtG)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: image251XLg64E0PCx,
+                      fullWidth: 936,
+                      fullHeight: 58,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </Card>
               </p.Stack>
               <div className={classNames(projectcss.all, sty.column__qtPo7)}>
                 <Card
                   className={classNames("__wab_instance", sty.card__vEdFl)}
-                />
+                  slot={null}
+                >
+                  {"Aucune limite horaire"}
+                </Card>
               </div>
               <div className={classNames(projectcss.all, sty.column___2K8Jc)}>
-                <Card
-                  className={classNames("__wab_instance", sty.card__t2ElK)}
-                />
+                <Card className={classNames("__wab_instance", sty.card__t2ElK)}>
+                  {"Mobilier de r\u00e9ception \u00e0 "}
+                </Card>
               </div>
               <div className={classNames(projectcss.all, sty.column__ftq3)}>
-                <Card
-                  className={classNames("__wab_instance", sty.card__o26QE)}
-                />
+                <Card className={classNames("__wab_instance", sty.card__o26QE)}>
+                  {
+                    "Situ\u00e9 \u00e0 20\u2019 de la gare de Deauville-Trouville"
+                  }
+                </Card>
               </div>
             </div>
           </section>
@@ -366,7 +326,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.h2__vMz1
                 )}
               >
-                {"Create your dream moment at Montal..."}
+                {"Un Moment Inoubliable .... "}
               </h2>
               <div
                 className={classNames(
@@ -376,7 +336,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 )}
               >
                 {
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing"
+                  "\nLe Domaine vous offre un cadre idyllique pour c\u00e9l\u00e9brer vos \u00e9v\u00e8nements : \n-\tUn sublime Manoir de 14 couchages, \n-\tUne tente pouvant accueillir jusqu'\u00e0 200 personnes, \n-\tPlusieurs espaces ext\u00e9rieurs pouvant \u00eatre utilis\u00e9s au gr\u00e9 de vos envies.\n"
                 }
               </div>
             </p.Stack>
@@ -391,27 +351,24 @@ function PlasmicHomepage__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__eycPz)}
             >
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-              ) ? (
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__hxnir)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: martenBjork6DW3XyQvcYeUnsplashjpgRHzA0GgqX5Na,
-                    fullWidth: 4096,
-                    fullHeight: 2730,
-                    aspectRatio: undefined
-                  }}
-                />
-              ) : null}
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__hxnir)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: martenBjork6DW3XyQvcYeUnsplashjpgRHzA0GgqX5Na,
+                  fullWidth: 4096,
+                  fullHeight: 2730,
+                  aspectRatio: undefined
+                }}
+              />
+
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -425,7 +382,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.h2__nT2Hc
                   )}
                 >
-                  {"Beautiful moments"}
+                  {"Votre Mariage"}
                 </h2>
                 <div
                   className={classNames(
@@ -435,18 +392,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   )}
                 >
                   {
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing"
-                  }
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__szNk7
-                  )}
-                >
-                  {
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing"
+                    "Laissez-vous emporter par la magie du Domaine de Montalouveau et par son \u00e9nergie unique! \n\nNous souhaitons que vous puissiez organiser un \u00e9v\u00e8nement \u00e0 votre image en faisant appel aux prestataires de votre choix. Toutefois, sachant qu\u2019il est parfois difficile de trouver les \u00ab perles rares \u00bb d\u00e8s la premi\u00e8re fois, nous sommes pr\u00eats \u00e0 partager avec vous notre exp\u00e9rience en vous proposant une liste de partenaires reconnus pour leur professionnalisme et pour la qualit\u00e9 de leurs prestations. \n"
                   }
                 </div>
                 <Button
@@ -484,83 +430,69 @@ function PlasmicHomepage__RenderFunc(props) {
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly")
                   ? "Get In Touch"
-                  : "Contact us"}
+                  : "Contactez nous"}
               </h2>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__fwNzI
-                )}
-              >
-                {"Fill in your order info and someone will be in touch."}
-              </div>
               <div className={classNames(projectcss.all, sty.freeBox__se1Xs)}>
-                {true ? (
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox___0KwOq)}
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___0KwOq)}
+                >
+                  <TextInput
+                    data-plasmic-name={"textInput"}
+                    data-plasmic-override={overrides.textInput}
+                    className={classNames("__wab_instance", sty.textInput)}
+                    onChange={(...eventArgs) => {
+                      p.generateStateOnChangeProp($state, [
+                        "textInput",
+                        "value"
+                      ])((e => e.target?.value).apply(null, eventArgs));
+                    }}
+                    placeholder={"Enter your Email  here"}
+                    value={
+                      p.generateStateValueProp($state, [
+                        "textInput",
+                        "value"
+                      ]) ?? ""
+                    }
+                  />
+
+                  <TextInput
+                    data-plasmic-name={"textInput2"}
+                    data-plasmic-override={overrides.textInput2}
+                    className={classNames("__wab_instance", sty.textInput2)}
+                    onChange={(...eventArgs) => {
+                      p.generateStateOnChangeProp($state, [
+                        "textInput2",
+                        "value"
+                      ])((e => e.target?.value).apply(null, eventArgs));
+                    }}
+                    placeholder={"Order"}
+                    value={
+                      p.generateStateValueProp($state, [
+                        "textInput2",
+                        "value"
+                      ]) ?? ""
+                    }
+                  />
+
+                  <Button
+                    className={classNames("__wab_instance", sty.button__trT8V)}
+                    color={"sand"}
+                    size={"compact"}
+                    submitsForm={true}
                   >
-                    <TextInput
-                      data-plasmic-name={"textInput"}
-                      data-plasmic-override={overrides.textInput}
-                      className={classNames("__wab_instance", sty.textInput)}
-                      onChange={(...eventArgs) => {
-                        p.generateStateOnChangeProp($state, [
-                          "textInput",
-                          "value"
-                        ])((e => e.target?.value).apply(null, eventArgs));
-                      }}
-                      placeholder={"Enter your Email  here"}
-                      value={
-                        p.generateStateValueProp($state, [
-                          "textInput",
-                          "value"
-                        ]) ?? ""
-                      }
-                    />
-
-                    <TextInput
-                      data-plasmic-name={"textInput2"}
-                      data-plasmic-override={overrides.textInput2}
-                      className={classNames("__wab_instance", sty.textInput2)}
-                      onChange={(...eventArgs) => {
-                        p.generateStateOnChangeProp($state, [
-                          "textInput2",
-                          "value"
-                        ])((e => e.target?.value).apply(null, eventArgs));
-                      }}
-                      placeholder={"Order"}
-                      value={
-                        p.generateStateValueProp($state, [
-                          "textInput2",
-                          "value"
-                        ]) ?? ""
-                      }
-                    />
-
-                    <Button
+                    <div
                       className={classNames(
-                        "__wab_instance",
-                        sty.button__trT8V
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__qgkhV
                       )}
-                      color={"sand"}
-                      size={"compact"}
-                      submitsForm={true}
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__qgkhV
-                        )}
-                      >
-                        {"Submit"}
-                      </div>
-                    </Button>
-                  </p.Stack>
-                ) : null}
+                      {"Submit"}
+                    </div>
+                  </Button>
+                </p.Stack>
               </div>
             </p.Stack>
           </section>
@@ -618,86 +550,78 @@ function PlasmicHomepage__RenderFunc(props) {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__wkrQz)}
                   >
-                    {true ? (
-                      <a
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          sty.link__mu6BW
-                        )}
-                        href={"#"}
-                        target={"_blank"}
-                      >
-                        <Icon3Icon
-                          className={classNames(projectcss.all, sty.svg__iw5Db)}
-                          role={"img"}
-                        />
-                      </a>
-                    ) : null}
-                    {true ? (
-                      <a
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          sty.link__y3YvN
-                        )}
-                        href={"#"}
-                        target={"_blank"}
-                      >
-                        <Icon2Icon
-                          className={classNames(projectcss.all, sty.svg__hTeXe)}
-                          role={"img"}
-                        />
-                      </a>
-                    ) : null}
-                    {true ? (
-                      <a
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          sty.link__oF957
-                        )}
-                        href={"#"}
-                        target={"_blank"}
-                      >
-                        <Icon28Icon
-                          className={classNames(projectcss.all, sty.svg__ik8Pj)}
-                          role={"img"}
-                        />
-                      </a>
-                    ) : null}
+                    <a
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__mu6BW
+                      )}
+                      href={"#"}
+                      target={"_blank"}
+                    >
+                      <Icon3Icon
+                        className={classNames(projectcss.all, sty.svg__iw5Db)}
+                        role={"img"}
+                      />
+                    </a>
+                    <a
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__y3YvN
+                      )}
+                      href={"#"}
+                      target={"_blank"}
+                    >
+                      <Icon2Icon
+                        className={classNames(projectcss.all, sty.svg__hTeXe)}
+                        role={"img"}
+                      />
+                    </a>
+                    <a
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__oF957
+                      )}
+                      href={"#"}
+                      target={"_blank"}
+                    >
+                      <Icon28Icon
+                        className={classNames(projectcss.all, sty.svg__ik8Pj)}
+                        role={"img"}
+                      />
+                    </a>
                   </p.Stack>
                 </p.Stack>
               </p.Stack>
             </p.Stack>
             <div className={classNames(projectcss.all, sty.freeBox__oGiwl)}>
-              {true ? (
-                <div className={classNames(projectcss.all, sty.freeBox__x34Tk)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__d9Xio
-                    )}
-                  >
-                    {
-                      "\u00a9 Company. All rights reserved. This site proudly built with  "
-                    }
-                  </div>
-                  <a
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link__gLZrz
-                    )}
-                    href={"https://www.plasmic.app"}
-                    target={"_blank"}
-                  >
-                    {"Plasmic"}
-                  </a>
+              <div className={classNames(projectcss.all, sty.freeBox__x34Tk)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__d9Xio
+                  )}
+                >
+                  {
+                    "\u00a9 Company. All rights reserved. This site proudly built with  "
+                  }
                 </div>
-              ) : null}
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__gLZrz
+                  )}
+                  href={"https://www.plasmic.app"}
+                  target={"_blank"}
+                >
+                  {"Plasmic"}
+                </a>
+              </div>
             </div>
           </p.Stack>
         </p.Stack>
@@ -745,7 +669,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicHomepage__RenderFunc({
       variants,
       args,

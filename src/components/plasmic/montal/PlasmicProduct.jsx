@@ -27,28 +27,18 @@ export const PlasmicProduct__VariantProps = new Array();
 
 export const PlasmicProduct__ArgProps = new Array("children", "slot");
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
-
 function PlasmicProduct__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
   const $props = {
     ...args,
     ...variants
   };
+  const $ctx = ph.useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
-  const [$queries, setDollarQueries] = React.useState({});
-  return true ? (
+  return (
     <div
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
@@ -105,7 +95,7 @@ function PlasmicProduct__RenderFunc(props) {
         </h3>
       </p.Stack>
     </div>
-  ) : null;
+  );
 }
 
 const PlasmicDescendants = {
@@ -126,7 +116,6 @@ function makeNodeComponent(nodeName) {
         }),
       [props, nodeName]
     );
-
     return PlasmicProduct__RenderFunc({
       variants,
       args,
