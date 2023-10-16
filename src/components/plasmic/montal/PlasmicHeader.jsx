@@ -33,6 +33,8 @@ export const PlasmicHeader__VariantProps = new Array();
 
 export const PlasmicHeader__ArgProps = new Array();
 
+const $$ = {};
+
 function PlasmicHeader__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);

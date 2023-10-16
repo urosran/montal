@@ -45,6 +45,8 @@ export const PlasmicTextInput__ArgProps = new Array(
   "value"
 );
 
+const $$ = {};
+
 function PlasmicTextInput__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(

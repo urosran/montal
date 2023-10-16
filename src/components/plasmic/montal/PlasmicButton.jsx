@@ -44,6 +44,8 @@ export const PlasmicButton__ArgProps = new Array(
   "target"
 );
 
+const $$ = {};
+
 function PlasmicButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);

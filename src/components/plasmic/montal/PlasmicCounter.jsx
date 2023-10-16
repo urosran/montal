@@ -26,6 +26,8 @@ export const PlasmicCounter__VariantProps = new Array();
 
 export const PlasmicCounter__ArgProps = new Array("children");
 
+const $$ = {};
+
 function PlasmicCounter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);

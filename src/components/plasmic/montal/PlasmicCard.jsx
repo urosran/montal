@@ -26,6 +26,8 @@ export const PlasmicCard__VariantProps = new Array();
 
 export const PlasmicCard__ArgProps = new Array("children", "slot", "slot2");
 
+const $$ = {};
+
 function PlasmicCard__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);

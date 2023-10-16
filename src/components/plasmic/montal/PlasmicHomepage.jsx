@@ -30,15 +30,15 @@ import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: 9G9orG1_p
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: 5fPXOujFdoNV/icon
 import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: XghSQPwT_Fcp/icon
 import imageYmHFjtXziBgG from "./images/image.png"; // plasmic-import: YmHFjtXZIBgG/picture
-import image251XLg64E0PCx from "./images/image2.png"; // plasmic-import: 51xLg64E0pCX/picture
 import martenBjork6DW3XyQvcYeUnsplashjpgRHzA0GgqX5Na from "./images/martenBjork6DW3XyQvcYeUnsplashjpg.jpg"; // plasmic-import: RHzA0ggqX5Na/picture
-import swissCheese575542640PngWJvvM9X24Vhp from "./images/swissCheese575542640Png.png"; // plasmic-import: WJvvM9x24VHP/picture
 
 createPlasmicElementProxy;
 
 export const PlasmicHomepage__VariantProps = new Array();
 
 export const PlasmicHomepage__ArgProps = new Array();
+
+const $$ = {};
 
 function PlasmicHomepage__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
@@ -131,25 +131,9 @@ function PlasmicHomepage__RenderFunc(props) {
                   >
                     {"           Domaine de Montalouveau "}
                   </h1>
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__xVn0N)}
-                  />
                 </div>
               </div>
             </div>
-          </section>
-          <section
-            data-plasmic-name={"section3Cta"}
-            data-plasmic-override={overrides.section3Cta}
-            className={classNames(projectcss.all, sty.section3Cta)}
-          >
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___0Lscq)}
-            />
           </section>
           <section
             data-plasmic-name={"sideImage"}
@@ -248,59 +232,13 @@ function PlasmicHomepage__RenderFunc(props) {
             className={classNames(projectcss.all, sty.cards)}
           >
             <div className={classNames(projectcss.all, sty.columns___6FP4S)}>
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.column__biFu)}
-              >
+              <div className={classNames(projectcss.all, sty.column__ftq3)}>
                 <Card
-                  className={classNames("__wab_instance", sty.card___8Wudg)}
-                  slot={null}
+                  data-plasmic-name={"card"}
+                  data-plasmic-override={overrides.card}
+                  className={classNames("__wab_instance", sty.card)}
                   slot2={null}
                 >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__aNsr
-                    )}
-                  >
-                    {""}
-                  </div>
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__f6EtG)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: image251XLg64E0PCx,
-                      fullWidth: 936,
-                      fullHeight: 58,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </Card>
-              </p.Stack>
-              <div className={classNames(projectcss.all, sty.column__qtPo7)}>
-                <Card
-                  className={classNames("__wab_instance", sty.card__vEdFl)}
-                  slot={null}
-                >
-                  {"Aucune limite horaire"}
-                </Card>
-              </div>
-              <div className={classNames(projectcss.all, sty.column___2K8Jc)}>
-                <Card className={classNames("__wab_instance", sty.card__t2ElK)}>
-                  {"Mobilier de r\u00e9ception \u00e0 "}
-                </Card>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__ftq3)}>
-                <Card className={classNames("__wab_instance", sty.card__o26QE)}>
                   {
                     "Situ\u00e9 \u00e0 20\u2019 de la gare de Deauville-Trouville"
                   }
@@ -511,24 +449,6 @@ function PlasmicHomepage__RenderFunc(props) {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__u2DYb)}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__jVhaP)}
-                  displayHeight={"61px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  loading={"lazy"}
-                  src={{
-                    src: swissCheese575542640PngWJvvM9X24Vhp,
-                    fullWidth: 640,
-                    fullHeight: 532,
-                    aspectRatio: undefined
-                  }}
-                />
-
                 <p.Stack
                   as={"div"}
                   hasGap={true}
@@ -635,10 +555,10 @@ const PlasmicDescendants = {
     "root",
     "header",
     "h1",
-    "section3Cta",
     "sideImage",
     "section3Cta3",
     "cards",
+    "card",
     "section3Cta2",
     "niceBackgroundImage",
     "textInput",
@@ -647,10 +567,10 @@ const PlasmicDescendants = {
 
   header: ["header"],
   h1: ["h1"],
-  section3Cta: ["section3Cta"],
   sideImage: ["sideImage"],
   section3Cta3: ["section3Cta3"],
-  cards: ["cards"],
+  cards: ["cards", "card"],
+  card: ["card"],
   section3Cta2: ["section3Cta2"],
   niceBackgroundImage: ["niceBackgroundImage"],
   textInput: ["textInput"],
@@ -691,10 +611,10 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     h1: makeNodeComponent("h1"),
-    section3Cta: makeNodeComponent("section3Cta"),
     sideImage: makeNodeComponent("sideImage"),
     section3Cta3: makeNodeComponent("section3Cta3"),
     cards: makeNodeComponent("cards"),
+    card: makeNodeComponent("card"),
     section3Cta2: makeNodeComponent("section3Cta2"),
     niceBackgroundImage: makeNodeComponent("niceBackgroundImage"),
     textInput: makeNodeComponent("textInput"),

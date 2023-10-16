@@ -27,6 +27,8 @@ export const PlasmicProduct__VariantProps = new Array();
 
 export const PlasmicProduct__ArgProps = new Array("children", "slot");
 
+const $$ = {};
+
 function PlasmicProduct__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
